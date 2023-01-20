@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const MainDash = styled.main`
+export const FirstDiv = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,7 +10,44 @@ export const MainDash = styled.main`
   background-color: #09153e;
   color: #fff;
 
-  .section-sub {
+  .info-div {
+    display: flex;
+    gap: 65px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  input {
+    box-shadow: none;
+    border: 0px solid;
+    border-radius: 5px;
+    height: 25px;
+    width: 260px;
+  }
+
+  .calculate-button {
+    margin-top: 20px;
+    border-radius: 5px;
+    height: 30px;
+    width: 150px;
+
+    color: black;
+    font-weight: bold;
+    :hover {
+      background-color: lightblue;
+    }
+
+    :active {
+      box-shadow: 0 2px #666;
+      transform: translateY(1.5px);
+    }
+  }
+
+  .div-preview {
     display: flex;
     flex-direction: column;
     align-items: center;
